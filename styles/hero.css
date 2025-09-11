@@ -1,0 +1,157 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url("../assets/hero.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+/* .hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: white;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: white;
+  clip-path: polygon(0 100%, 0 0, 100% 100%);
+} */
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-container {
+  /* position: relative; */
+  margin-top: 130px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 80%;
+  width: 81%;
+  padding: 80px;
+  /* background-color: aqua; */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  /* max-width: 700px; */
+  /* margin-top: 140px; */
+  width: 64%;
+  padding: 22px 30px;
+  /* background-color: #0056b3; */
+  margin-bottom: 46.5px;
+}
+
+.hero-content h1 {
+
+  /* text-align:justify; */
+  font-size: 78px;
+  /* background-color: black; */
+  margin: 12px 0;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 26px;
+}
+
+.hero-content p {
+  font-size: 29px;
+  margin-bottom: 30px;
+  /* background-color: beige; */
+  /* text-align: center; */
+}
+
+.hero-container .btn {
+  font-size: 21px;
+  background: #007bff;
+  color: white;
+  padding: 12px 60px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero-content .btn:hover {
+  background: #0056b3;
+}
+
+.angles {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+  z-index: 20;
+}
+
+.bars {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}   
+
+.left-bar, .right-bar {
+    background-color: white;
+    width: 26%;
+    height: 120px;
+}
+
+.left-bar {
+    transform-origin: top right;
+}
+
+.right-bar {
+    transform-origin: top left;
+    margin-left: auto;
+}
+
+.bar {
+    background-color: white;
+    width: 100%;
+    height: 7px;
+    z-index: 10;
+    position: absolute;
+    bottom: 0px;
+}
+
+.left-angle,
+.right-angle {
+  height: 120px;
+  width: 50%;
+  background: white;
+  /* border: 2px solid black; */
+}
+
+.left-angle {
+  transform: skewY(12deg);
+  transform-origin: top right;
+}
+
+.right-angle {
+  transform: skewY(-12deg);
+  transform-origin: top left;
+}
