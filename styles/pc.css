@@ -1,10 +1,3 @@
-/* body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
-} */
-
-/* CSS from section:pc */
 .pc-section {
   display: flex;
   justify-content: center;
@@ -127,7 +120,6 @@
   left: 70.44px;
 }
 
-/* Responsive Styles */
 @media (max-width: 1200px) {
   .pc-container {
     flex-direction: column;
@@ -165,13 +157,12 @@
 @media (max-width: 650px) {
   .macbook-pro-wrapper {
     width: 100%;
-    padding-top: 55.92%; /* Aspect ratio: (349.17 / 624.46) * 100% */
+    padding-top: 55.92%;
     height: 0;
     transform: none;
   }
   .screen-background,
   .macbook-pro-wrapper img {
-    /* Recalculate positions and sizes as percentages */
     position: absolute;
   }
   .screen-background {

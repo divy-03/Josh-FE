@@ -2,7 +2,7 @@
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-/* CSS from section:footer */
+
 .site-footer {
   background-color: #252b42;
   color: #ffffff;
@@ -25,9 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  /* flex-wrap: wrap; */
   gap: 20px;
-  /* flex-grow: 1; */
 }
 
 .footer-column {

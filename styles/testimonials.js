@@ -22,7 +22,6 @@ const testimonials = [
   }
 ];
 
-
 let current = 0;
 const testimonialCard = document.getElementById("testimonial-card");
 const dotsContainer = document.getElementById("pagination-dots");
@@ -71,7 +70,6 @@ function updateDots() {
     };
   });
 }
-
 
 document.querySelector(".carousel-btn.prev").onclick = () => {
   current = (current - 1 + testimonials.length) % testimonials.length;
