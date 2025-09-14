@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/default.css" />
     <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/letter.css" />
     <link rel="stylesheet" href="styles/pc.css" />
     <link rel="stylesheet" href="styles/features.css" />
     <link rel="stylesheet" href="styles/pricing.css" />
@@ -72,7 +73,7 @@
         </div>
       </div>
     </section> -->
-    <section id="features" class="features-section">
+    <section id="features" class="features-section features-section-root">
       <div class="container">
         <header class="features-header">
           <h2>Features</h2>
@@ -135,7 +136,7 @@
             class="play-button-overlay"
             role="button"
             aria-label="Play video"
-            style="display: flex;"
+            style="display: flex"
           >
             <div class="play-button-wrapper">
               <img
@@ -163,6 +164,7 @@
         </div> -->
       </div>
     </section>
+
     <section id="pc" class="pc-section">
       <div class="pc-container">
         <div class="pc-text-content">
@@ -174,7 +176,6 @@
           <a href="#" class="pc-button">Try For Free</a>
         </div>
         <div class="pc-image-content">
-          <!--merged image-->
           <div class="macbook-pro-wrapper">
             <div class="screen-background"></div>
             <img
@@ -202,7 +203,43 @@
       </div>
     </section>
 
-    <section id="partners" class="partners-section">
+    <section id="newsletter-cta" class="cta-section">
+      <div class="cta-container">
+        <div class="cta-image-wrapper">
+          <div class="illustration-container">
+            <img src="./assets/letter.png" alt="letter" class="svg-img" />
+          </div>
+        </div>
+        <div
+          class="cta-content-wrapper"
+          style="
+            align-items: flex-start;
+            text-align: left;
+            justify-content: center;
+            min-height: 514px;
+          "
+        >
+          <div class="cta-text-group" style="margin-bottom: 32px">
+            <h3 class="subheading">At your fingertips</h3>
+            <h2 class="main-heading">Lightning fast <br />prototyping</h2>
+          </div>
+          <div class="cta-form-group">
+            <h3 class="subheading">Subscribe to our Newsletter</h3>
+            <p class="form-description">Available exclusivery on Figmaland</p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                class="email-input"
+                placeholder="Your Email"
+              />
+              <button type="submit" class="submit-button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners" class="partners-section partners-section-root">
       <div class="container">
         <header class="partners-header">
           <h2 class="partners-title">Partners</h2>
@@ -282,7 +319,10 @@
         <a href="#" class="cta-button">Try For Free</a>
       </div>
     </section>
-    <section id="testimonials" class="testimonials-section">
+    <section
+      id="testimonials"
+      class="testimonials-section testimonials-section-root"
+    >
       <div class="testimonials-container">
         <h2 class="testimonials-title">Testimonials</h2>
         <div class="carousel-wrapper">
@@ -300,8 +340,6 @@
           <!-- Dots will be injected by JS -->
         </div>
       </div>
-  <script src="./styles/testimonials.js"></script>
-  <script src="./styles/features-video.js"></script>
     </section>
 
     <section id="pricing" class="pricing-section">
@@ -487,7 +525,7 @@
         </div>
       </div>
     </section>
-    <section id="section-footer">
+    <section id="section-footer" class="footer-section-root">
       <footer class="site-footer">
         <div class="footer-container">
           <nav class="footer-nav-links">
@@ -566,5 +604,7 @@
         </div>
       </footer>
     </section>
+    <script src="./styles/testimonials.js"></script>
+    <script src="./styles/features-video.js"></script>
   </body>
 </html>
