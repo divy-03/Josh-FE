@@ -2,23 +2,6 @@
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-h3,
-p {
-  margin: 0;
-}
-
 /* CSS from section:footer */
 .site-footer {
   background-color: #252b42;
@@ -30,17 +13,21 @@ p {
   max-width: 991px;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 50px;
+  padding-bottom: 120px;
 }
 
 .footer-nav-links {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  /* flex-wrap: wrap; */
   gap: 20px;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .footer-column {
@@ -65,6 +52,7 @@ p {
 }
 
 .footer-column li a {
+  color: white;
   font-size: 15px;
   font-weight: 400;
   line-height: 28px;
