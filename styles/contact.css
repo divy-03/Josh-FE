@@ -23,6 +23,7 @@
   padding: 100px 20px;
   background-color: var(--color-background);
   color: var(--color-text-secondary);
+  padding-bottom: 130px;
 }
 
 .contact-container {
@@ -40,6 +41,7 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
+  margin-top: 120px;
 }
 
 .heading-1 {
@@ -56,6 +58,7 @@
   line-height: 40px;
   color: var(--color-text-secondary);
   margin: 0;
+  margin-top: 25px;
 }
 
 .contact-content-grid {
@@ -176,10 +179,9 @@
   margin: 0;
 }
 
-.map-image-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 24px;
+.map-image-container iframe {
+  width: 600px;
+  height: 400px;
   display: block;
 }
 
