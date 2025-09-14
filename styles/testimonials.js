@@ -1,20 +1,20 @@
 const testimonials = [
   {
-    logo: "https://instant.pxcode.io/api/pages/3f625c21-03b6-473a-a720-709b0a3f098e/images/2_278.svg",
+    logo: "./assets/ibm.png",
     quote: "Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.",
-    avatar: "https://instant.pxcode.io/api/pages/3f625c21-03b6-473a-a720-709b0a3f098e/images/2_283.svg",
+    avatar: "https://randomuser.me/api/portraits/men/78.jpg",
     name: "John Doe",
     title: "Ui designer"
   },
   {
-    logo: "https://instant.pxcode.io/api/pages/03cf1494-4c59-49bc-8610-2415ab8a1003/images/522_266.svg",
+    logo: "./assests/google.png",
     quote: "Most calendars are designed for teams. Slate helps me organize my freelance work and keep my clients happy.",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     name: "Alex Smith",
     title: "Freelance Developer"
   },
   {
-    logo: "https://instant.pxcode.io/api/pages/03cf1494-4c59-49bc-8610-2415ab8a1003/images/eb4e12bf7b687783fd6728fe643e6d03dac5c0d0.png",
+    logo: "./assets/amazon.png",
     quote: "Most calendars are designed for teams. The best tool for managing my time and projects as a designer.",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
     name: "Maria Garcia",
@@ -82,6 +82,4 @@ document.querySelector(".carousel-btn.next").onclick = () => {
   renderTestimonial(current);
 };
 
-
-// Initial render and start auto-advance
 renderTestimonial(current);
