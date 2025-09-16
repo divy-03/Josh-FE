@@ -9,7 +9,6 @@
 }
 
 .carousel-btn {
-  display: none;
   background: var(--color-background);
   border: 1px solid #ccc;
   border-radius: 50%;
@@ -23,7 +22,7 @@
   justify-content: center;
   transition: background 0.2s, color 0.2s;
   z-index: 2;
-  visibility: hidden;
+  padding-bottom: 10px;
 }
 
 .carousel-btn:hover {
